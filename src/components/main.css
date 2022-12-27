@@ -11,7 +11,7 @@ main{
 }
 .new-todo > input{
     width: 100%;
-    padding: 3% 0;
+    padding: 3%;
     border: none;
     font-size: 1.2em;
     border-radius: 3px;
@@ -26,5 +26,31 @@ ul{
     width: 100%;
     margin-top: 10%;
     border: solid blue 1px;    
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid green 1px;    
+    width: 100%;
+    font-size: .9em;
+}
+
+.buttons{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.active{
+    color: hsl(220, 98%, 61%);
 }
 
