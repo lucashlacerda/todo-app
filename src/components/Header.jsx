@@ -7,7 +7,7 @@ import lightDesktopBackground from '../assets/bg-desktop-light.jpg'
 import sunIcon from '../assets/icon-sun.svg'
 import moonIcon from '../assets/icon-moon.svg'
 
-function Header (props:any){
+function Header (props){
     const context = useContext(AppContext);
 
     return(
