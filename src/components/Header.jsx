@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
-import './header.css'
 import nightDesktopBackground from '../assets/bg-desktop-dark.jpg'
 import lightDesktopBackground from '../assets/bg-desktop-light.jpg'
 

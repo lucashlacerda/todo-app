@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import Todo from "./Todo";
-import "./main.css"
+
 
 import { v4 as uuid } from 'uuid';
 
@@ -9,6 +9,7 @@ function Main(){
     const [addedTodos, setAddedTodos] = useState([]);
     const [showingTodos, setShowingTodos] = useState([]);
     const [showFilter, setShowFilter] = useState(1);
+
 
     useEffect(()=>{
         if(showFilter == 1){
@@ -65,9 +66,9 @@ function Main(){
             <div className="options">
                 <span className="itens-left">{showingTodos.length == 1 ? `${showingTodos.length} item left` : `${showingTodos.length} items left`}</span>
                 <div className="buttons">
-                    <button onClick = {() => (setShowFilter(1))} className={showFilter === 1 && "active"}>All</button>
-                    <button onClick = {() => (setShowFilter(2))} className={showFilter === 2 && "active"}>Active</button>
-                    <button onClick = {() => (setShowFilter(3))} className={showFilter === 3 && "active"}>Completed</button>
+                    <button onClick = {() => (setShowFilter(1))} className={`${showFilter === 1 && "active"} filter`}>All</button>
+                    <button onClick = {() => (setShowFilter(2))} className={`${showFilter === 2 && "active"} filter`}>Active</button>
+                    <button onClick = {() => (setShowFilter(3))} className={`${showFilter === 3 && "active"} filter`}>Completed</button>
                 </div>
                 <button className="clear" onClick={clearCompleted}>Clear Completed</button>
             </div>       
