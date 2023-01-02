@@ -60,9 +60,6 @@
   padding: 2.5% 0;
   flex-wrap: wrap;
 }
-.App main ul li text- input {
-  margin-right: 3%;
-}
 .App main ul li img {
   margin-left: auto;
   width: 15px;
@@ -82,9 +79,17 @@
   justify-content: center;
   align-items: center;
 }
-.App main ul li .checked-text {
+.App main ul li .delete-button {
+  cursor: pointer;
+}
+.App main ul .checked-text {
   text-decoration: line-through;
-  color: hsl(233deg, 14%, 26%);
+  color: hsla(233deg, 14%, 26%, 0.75);
+}
+.App main ul hr {
+  background-color: hsla(233deg, 11%, 52%, 0.35);
+  height: 1px;
+  border: none;
 }
 .App main .options {
   width: 100%;
